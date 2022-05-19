@@ -20,7 +20,7 @@ const Home = () => {
     
     return (
       <div>
-        Hello {name}
+        {name ? 'Hola ' + name: "No haz iniciado sesión"}
       </div>
     )
   
