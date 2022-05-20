@@ -1,22 +1,29 @@
 
 
-.form-signin {
-  max-width: 330px;
-  padding: 15px;
+.container{
+  height: 100%;
 }
 
-.form-signin .form-floating:focus-within {
-  z-index: 2;
+.navbar{
+  background-color: white;
+  padding-top: 20px;
 }
 
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+.icon-star{
+  color:rgb(255, 255, 29);
 }
 
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+.img-celphone{
+  padding-top: 60px;
+}
+
+.title-size{
+  font-size: 50px;
+}
+.logotipo{
+  height: 40px;
+  width: 60px;
+}
+.img-google-play{
+  width: 300px;
 }
