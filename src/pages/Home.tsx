@@ -1,4 +1,11 @@
 
+import { AiFillStar} from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter} from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaPlusCircle } from "react-icons/fa";
+import { FaMinusCircle } from "react-icons/fa";
 
 const Home = (props: { name: string }) => {
   
@@ -11,8 +18,8 @@ const Home = (props: { name: string }) => {
                         <h1 className="fw-bold mb-3 title-size">Zero Hassle Push to <br/> Talk Conversations</h1>
                         <p className="mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem officia cum repellat repellendus ipsa, facilis voluptatem at earum saepe iure. Tempore esse rem dolores officiis nostrum deserunt ea veritatis harum!</p>
                         <div className="d-grid gap-2 d-md-block">
-                            <button className="btn btn-light btn-lg btn-outline-dark mb-3" type="button"><i className="icon-play-circle"></i> Demo</button>
-                            <button className="btn btn-primary btn-lg mb-3" type="button">Get Started</button>
+                            <button className="btn btn-light btn-lg btn-outline-dark mb-3 me-1" type="button"><i className="icon-play-circle"></i> Demo</button>
+                            <button className="btn btn-primary btn-lg mb-3 me-1" type="button">Get Started</button>
                         </div>
                         <div className="row">
                             <div className="col-sm-auto text-start">
@@ -23,11 +30,11 @@ const Home = (props: { name: string }) => {
                                 <img src="./images/perfil-1.svg" className="rounded-circle float-start img-fluid"  alt="" width="40" height="40" />
                             </div>
                             <div className="col-sm-auto text-end">
-                                <i className="icon-star icon-large"></i>
-                                <i className="icon-star icon-large"></i>
-                                <i className="icon-star icon-large"></i>
-                                <i className="icon-star icon-large"></i>
-                                <i className="icon-star icon-large"></i> 5.0
+                                <AiFillStar color="yellow" size="2em"/>
+                                <AiFillStar color="yellow" size="2em"/>
+                                <AiFillStar color="yellow" size="2em"/>
+                                <AiFillStar color="yellow" size="2em"/>
+                                <AiFillStar color="yellow" size="2em"/> 5.0
                                 <p>from 200 + reviewers</p>
                             </div>
                         </div>
@@ -59,11 +66,11 @@ const Home = (props: { name: string }) => {
                 <div className="mt-sm-5 mb-sm-5 pt-3 pb-3">
                   <div className="row mt-sm-2 align-items-center">
                     <div className="col-sm-6">
-                      <i className="icon-star icon-large"></i>
-                      <i className="icon-star icon-large"></i>
-                      <i className="icon-star icon-large"></i>
-                      <i className="icon-star icon-large"></i>
-                      <i className="icon-star icon-large"></i>
+                      <AiFillStar color="yellow" size="2em"/>
+                      <AiFillStar color="yellow" size="2em"/>
+                      <AiFillStar color="yellow" size="2em"/>
+                      <AiFillStar color="yellow" size="2em"/>
+                      <AiFillStar color="yellow" size="2em"/>
                       <h1 className="fw-bold mt-sm-4">We've really speed up our <br/> workflow with Company <br/> and haven't looked back.</h1>
                       <img src="./images/perfil-1.svg" alt="" className="rounded-circle float-start img-fluid" width="40"/> &nbsp; Katherine Moss
                       <p className="fw-light">&nbsp; Project Manager, Layers</p>
@@ -71,13 +78,13 @@ const Home = (props: { name: string }) => {
                     <div className="col-sm-6">
                       <div className="row">
                         <div className="col text-center">
-                          <img src="./images/cartoon-giraffe-7178753_1280.jpg" alt="" width="140" className=" align-bottom" />
+                          <img src="./images/cartoon-giraffe-7178753_1280.jpg" alt="" width="140" className=" align-bottom me-1" />
                           <img src="./images/lake-6785552_1280.jpg" alt="" width="140" className="" />
                         </div>
                         <div className="w-100 mt-2"></div>
                         <div className="col text-center">
-                          <img src="./images/river-7190415_1280.jpg" alt="" width="140" className=" align-top" />
-                          <img src="./images/tourist-4400871_1920.jpg" alt="" width="140" className="" />
+                          <img src="./images/river-7190415_1280.jpg" alt="" width="140" className=" align-top me-1" />
+                          <img src="./images/tourist-4400871_1920.jpg" alt="" width="140" className="me-1" />
                           <img src="./images/wedding-6674650_1280.jpg" alt="" width="140" className="align-top" />
                         </div>
                       </div>
@@ -96,7 +103,7 @@ const Home = (props: { name: string }) => {
                   <h5>Yes, you can try us for free for 30 days. If you want, we'll provide you with a free,personalized <br/> 30-minute onboarding call to get you up and running as soon as possible.</h5>
                 </div>
                 <div className="col-2 text-end">
-                  <i className="icon-minus icon-large"></i>
+                  <FaMinusCircle size="2em" />
                 </div>
                 <div className="w-100 mt-2"></div>
                 <hr/>
@@ -104,7 +111,8 @@ const Home = (props: { name: string }) => {
                   <h5 className="fw-bold">What is your cancellation policy?</h5>
                 </div>
                 <div className="col text-end">
-                  <i className="icon-plus icon-large"></i>
+                  <FaPlusCircle size="2em" />
+                  
                 </div>
                 <div className="w-100 mt-2"></div>
                 <hr/>
@@ -112,7 +120,7 @@ const Home = (props: { name: string }) => {
                   <h5 className="fw-bold">Can other info be added to an invoice?</h5>
                 </div>
                 <div className="col text-end">
-                  <i className="icon-plus icon-large"></i>
+                  <FaPlusCircle size="2em" />
                 </div>
                 <div className="w-100 mt-2"></div>
                 <hr/>
@@ -120,7 +128,7 @@ const Home = (props: { name: string }) => {
                   <h5 className="fw-bold">how does billing work?</h5>
                 </div>
                 <div className="col text-end">
-                  <i className="icon-plus icon-large"></i>
+                  <FaPlusCircle size="2em" />
                 </div>
                 <div className="w-100 mt-2"></div>
                 <hr/>
@@ -128,7 +136,7 @@ const Home = (props: { name: string }) => {
                   <h5 className="fw-bold">How do I change my account email?</h5>
                 </div>
                 <div className="col text-end mb-sm-5">
-                  <i className="icon-plus icon-large"></i>
+                  <FaPlusCircle size="2em" />
                 </div>
                 <div className="w-100 mt-2"></div>
                 
@@ -140,7 +148,7 @@ const Home = (props: { name: string }) => {
                   <div className="pt-4 text-center">
                     <h5 className="fw-bold">Still have questions?</h5>
                     <p> Can't find the answer you're looking for? Please chat to our friendly team.</p>
-                    <button className="btn-primary"> Get in touch</button>
+                    <button className="btn btn-primary"> Get in touch</button>
                   </div>
                 </div>
               </div>
@@ -188,10 +196,10 @@ const Home = (props: { name: string }) => {
                 <div className="d-flex justify-content-between py-2 my-4 border-top">
                   <p>&copy; 2022 NavaCas</p>
                   <ul className="list-unstyled d-flex">
-                    <li className="ms-3"><i className="icon-twitter icon-2x"></i> </li>
-                    <li className="ms-3"><i className="icon-linkedin icon-2x"></i></li>
-                    <li className="ms-3"><i className="icon-facebook icon-2x"></i></li>
-                    <li className="ms-3"><i className="icon-github icon-2x"></i></li>
+                    <FaFacebook  size="2em" className="ms-3"/>
+                    <FaTwitter  size="2em" className="ms-3"/>
+                    <FaLinkedin size="2em" className="ms-3"/>
+                    <FaGithub size="2em" className="ms-3"/>
                   </ul>
                 </div>
               </footer>

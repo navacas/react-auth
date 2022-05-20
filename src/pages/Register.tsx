@@ -30,24 +30,31 @@ const Register = () => {
     }
 
     return (
-        <form onSubmit={submit}>
-            
-            
-            <h1 className="h3 mb-3 fw-normal">Please register</h1>
-
-            <input className="form-control" id="floatingInput" placeholder="Name" required
-                onChange={e => setName(e.target.value)}
-            />
-            <input type="email" className="form-control" id="floatingInput" placeholder="Email Address" required
-                onChange={e => setEmail(e.target.value)}
-            />
-            
-            <input type="password" className="form-control" id="floatingPassword" placeholder="Password" required
-                onChange={e => setPassword(e.target.value)}
-            />
-        
-            <button className="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
-        </form>
+        <div className="container">
+            <div className="row justify-content-center align-items-center pt-5 rounded">
+                <div className="col-sm-auto">
+                    <div className="card">
+                        <div className="card-body">
+                            <div className="form-control-sm">
+                                <form onSubmit={submit}>
+                                    <h1 className="h3 mb-3 fw-normal">Please register</h1>
+                                    <input className="form-control mb-3" id="floatingInput" placeholder="Name" required
+                                        onChange={e => setName(e.target.value)}
+                                    />
+                                    <input type="email" className="form-control mb-3" id="floatingInput" placeholder="Email Address" required
+                                        onChange={e => setEmail(e.target.value)}
+                                    />
+                                    <input type="password" className="form-control mb-3" id="floatingPassword" placeholder="Password" required
+                                        onChange={e => setPassword(e.target.value)}
+                                    />
+                                    <button className="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     )
 }
 
