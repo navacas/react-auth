@@ -35,7 +35,7 @@ function App() {
         <Nav name={name} setName={setName}/>
         <main className="form-signin w-100 m-auto">
           <Routes>
-            <Route path="/" element={ <Home name={name}/>} />
+            <Route path="/" element={ <Home/>} />
             <Route path="/login" element={ <Login setName={setName}/>} />
             <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<Dashboard />} />

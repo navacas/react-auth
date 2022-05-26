@@ -1,3 +1,4 @@
+// import { render } from '@testing-library/react';
 import React, { SyntheticEvent, useState } from 'react'
 import { Link, Navigate } from 'react-router-dom';
 
@@ -24,9 +25,10 @@ const Login = (props: { setName: ( name: string ) => void }) => {
       
       setRedirect(true);
       props.setName(content.name);
-  }
-      if (redirect) {
-        return <Navigate to="/" />;
+
+    }
+    if (redirect) {
+      return <Navigate to="/" />;
     }
 
     return ( 
@@ -84,4 +86,4 @@ const Login = (props: { setName: ( name: string ) => void }) => {
     )
 }
 
-export default Login
+export default Login;

@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaPlusCircle } from "react-icons/fa";
 import { FaMinusCircle } from "react-icons/fa";
 
-const Home = (props: { name: string }) => {
+const Home = () => {
   
     return (
       <>

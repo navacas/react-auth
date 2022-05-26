@@ -12,7 +12,7 @@ const Nav = (props: { name: string, setName: (name: string) => void }) => {
 
       props.setName(' ');
     }
-    console.log( props.name || 'No tiene');
+
     let menu;
     let dashboard;
         
@@ -88,4 +88,4 @@ const Nav = (props: { name: string, setName: (name: string) => void }) => {
     )
 }
 
-export default Nav
+export default Nav;
