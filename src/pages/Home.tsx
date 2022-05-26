@@ -11,7 +11,7 @@ const Home = (props: { name: string }) => {
   
     return (
       <>
-        {props.name ? 'Hola ' + props.name : "No haz iniciado sesión"}
+        {/* {props.name ? 'Hola ' + props.name : "No haz iniciado sesión"} */}
           <div className="container" >
                 <div className="row justify-content-md-center align-items-center" >
                     <div className="col col-sm-6" >

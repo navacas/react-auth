@@ -21,15 +21,15 @@ const Login = (props: { setName: ( name: string ) => void }) => {
       }); 
 
       const content = await response.json();
-      props.setName(content.name);
-
+      
       setRedirect(true);
+      props.setName(content.name);
   }
       if (redirect) {
         return <Navigate to="/" />;
     }
 
-    return (
+    return ( 
         <div className="container">
           <div className="row justify-content-center align-items-center pt-5 rounded">
             <div className="col-sm-auto">

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Login from './pages/Login';
 import Nav from './components/Nav';
@@ -35,7 +35,7 @@ function App() {
         <Nav name={name} setName={setName}/>
         <main className="form-signin w-100 m-auto">
           <Routes>
-            <Route path="/" element={<Home name={name}/>} />
+            <Route path="/" element={ <Home name={name}/>} />
             <Route path="/login" element={ <Login setName={setName}/>} />
             <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<Dashboard />} />

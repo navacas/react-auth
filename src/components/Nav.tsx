@@ -1,5 +1,4 @@
-
-import React from 'react'
+// import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Nav = (props: { name: string, setName: (name: string) => void }) => {
@@ -11,47 +10,33 @@ const Nav = (props: { name: string, setName: (name: string) => void }) => {
           credentials: 'include',
       }); 
 
-      props.setName('');
+      props.setName(' ');
+    }
+    console.log( props.name || 'No tiene');
+    let menu;
+    let dashboard;
+        
+    if (!props.name) {
+        menu = (
+            <form className="d-flex">
+                <Link to="/login" className="btn me-1" type="submit">Log in</Link>
+                <Link to="/register" className="btn btn-primary me-1" type="submit">Sign up</Link>
+            </form>
+        )
+        
+    } else{
+        dashboard = (
+            <Link to ="/dashboard" className="nav-link active" aria-current="page" >Dashboard</Link>
+        )
+        menu = (
+            <form className="d-flex">
+                <button className='btn me-1'>Hola {props.name}</button>
+                <Link to="/login" className="btn btn-primary me-1" onClick={logout}>Logout</Link>
+            </form>
+        )
     }
 
-    /* let menu;
-
-    if (props.name === '') {
-        menu = (
-            <ul className="navbar-nav me-auto mb-2 mb-md-0">
-                <li className="nav-item">
-                    <Link to="/login" className="nav-link active">Login</Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/register" className="nav-link active">Register</Link>
-                </li>
-            </ul>
-        )
-    }else{
-        menu = (
-            <ul className="navbar-nav me-auto mb-2 mb-md-0">
-                <li className="nav-item">
-                    <Link to="/login" className="nav-link active" onClick={logout}>Logout</Link>
-                </li>
-                
-            </ul>
-        )
-    } */
-
     return (
-      
-        // <nav className="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-        //     <div className="container-fluid">
-        //         <Link to="/" className="navbar-brand" >Home</Link>
-        //         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        //             <span className="navbar-toggler-icon"></span>
-        //         </button>
-        //         <div className="collapse navbar-collapse">
-        //             {menu}
-        //         </div>
-        //     </div>
-        // </nav>
-
         <div className="container">
             <nav className="navbar sticky-top navbar-expand-lg navbar-light border-bottom">
                 <div className="container-fluid">
@@ -68,7 +53,7 @@ const Nav = (props: { name: string, setName: (name: string) => void }) => {
                             <Link to ="/" className="nav-link active" aria-current="page" >Home</Link>
                         </li>
                         <li>
-                            <Link to ="/dashboard" className="nav-link active" aria-current="page" >Dashboard</Link>
+                            {dashboard}
                         </li>
                         <li className="nav-item dropdown">
                             <Link to ="/" className="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -94,10 +79,7 @@ const Nav = (props: { name: string, setName: (name: string) => void }) => {
                             <Link to ="/" className="nav-link" >Pricing</Link>
                         </li>
                     </ul>
-                    <form className="d-flex">
-                        <Link to="/login" className="btn me-1" type="submit">Log in</Link>
-                        <Link to="/register" className="btn btn-primary me-1" type="submit">Sign up</Link>
-                    </form>
+                    {menu}
                 </div>
                 </div>
             </nav>
